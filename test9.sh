@@ -17,12 +17,14 @@ case $age in
 	*)
 		echo "you are to old for school"
 
+		;;
+
 	esac
 
 can_vote=0
 
 age=18
-((age >= 18?(can_vote=1):(can_vote=0))
+((age >= 18?(can_vote=1):(can_vote=0)))
 echo "can vote : $can_vote"
 
 
