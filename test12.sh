@@ -41,9 +41,9 @@ for i in ${fav_nums[@]}; do
     echo $i
 done
 
-echo "Array Length: ${fav_nums[@]}"
+echo "Array Length: ${#fav_nums[@]}"
 
-echo "Index 3 Length: ${fav_nums[3]}"
+echo "Index 3 Length: ${#fav_nums[3]}"
 
 sorted_nums=($(for i in "${fav_nums[@]}"; do echo $i; done | sort))
 
